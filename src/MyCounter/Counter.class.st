@@ -27,3 +27,13 @@ Counter >> count [
 Counter >> count: aNum [
 	count := aNum.
 ]
+
+{ #category : 'computation' }
+Counter >> decrement [
+	count := count - 1.
+]
+
+{ #category : 'computation' }
+Counter >> increment [
+	count := count + 1.
+]
