@@ -48,3 +48,11 @@ Counter >> initialize [
 	"Set initial value to 0"
 	count := 0.
 ]
+
+{ #category : 'printing' }
+Counter >> printOn: aStream [
+	| tex |
+	tex := ' with value: ', count asString.
+	super printOn: aStream.
+	aStream nextPutAll: tex.
+]
